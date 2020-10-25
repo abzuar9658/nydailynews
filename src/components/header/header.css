@@ -1,0 +1,33 @@
+.sections-link{
+    color: white;
+}
+.sections-link:hover{
+    color: black;
+    background-color: white;
+}
+.link{
+    margin-left:auto ;
+    margin-right: auto;
+}
+.main-heading{
+    font-family: 'Zilla Slab', serif;
+    font-weight: 900;
+    font-size: 400%;
+    padding-top: 25px;
+}
+.h1-icon{
+    color:red;
+}
+.h1-date{
+    margin-left: -75%;
+    font-weight: bolder;
+}
+.trending-topics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.trending-text{
+    padding-top: 10px;
+    font-weight: bolder;
+}

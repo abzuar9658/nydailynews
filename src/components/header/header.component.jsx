@@ -1,5 +1,8 @@
 import {React, Component } from 'react'
 import {Navbar, Form,Nav,Button} from 'react-bootstrap'
+import {withRouter, Link} from 'react-router-dom'
+import Sections from '../sections/sections.component'
+import Carousel from '../carousel/carousel.component'
 import './header.css'
 class Header extends Component{
     state={
@@ -10,7 +13,7 @@ class Header extends Component{
             <div >
                 <div className = 'header'>
                     <Navbar bg="dark" variant="dark" >
-                        <Nav.Link className = 'sections-link'><i className = 'align justify icon'></i>SECTIONS</Nav.Link>
+                        <Nav.Link><Sections/></Nav.Link>
                             <Nav className="mr-auto ml-auto " variant = 'light' >           
                                 <Nav.Link variant = 'light'>NEW YORK</Nav.Link>
                                 <Nav.Link >SPORTS</Nav.Link>
@@ -19,7 +22,7 @@ class Header extends Component{
                                 <Nav.Link >OPINION</Nav.Link>
                             </Nav>
                         <Form inline>
-                        <Button variant="light">LOG IN</Button>
+                        <Link to = '/sign-in-sign-up' style={{textColor:'black', textDecoration: 'none' }} className = 'ui button'>LOG IN</Link>                        
                         </Form>
                     </Navbar>
                 </div>
@@ -41,8 +44,9 @@ class Header extends Component{
                     </p>
                 </div>
                 <hr/>
+                <Carousel/>
             </div>
         )
     }
 }
-export default Header
+export default withRouter(Header)

@@ -1,5 +1,5 @@
 import React from "react";
-import {withRouter,Link} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 
 import './footer.css'
 
@@ -10,14 +10,15 @@ const FooterPage = () => {
         <h1><i className = 'newspaper icon icon-size'></i></h1>
         <p>Connect</p>
         <div className = 'social-icons'>
-          <i class="facebook icon"></i>
-          <i class="twitter icon"></i>
-          <i class="instagram icon"></i>
-          <i class="youtube icon"></i>
+          <button><i class="facebook icon"></i></button>
+          <button><i class="twitter icon"></i></button>
+          <button><i class="instagram icon"></i></button>
+          <button><i class="youtube icon"></i></button>
         </div>
       </div>
 
       <div className = 'section-2'>
+
         <h5>TRIBUNE PUBLICATIONS</h5>
         <div className = 'links-1'>
           <div className = 'c1'>

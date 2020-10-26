@@ -44,7 +44,6 @@ class Header extends Component{
                     </p>
                 </div>
                 <hr/>
-                <Carousel/>
             </div>
         )
     }

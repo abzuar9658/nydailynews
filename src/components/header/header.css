@@ -1,3 +1,13 @@
+.header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index:100;
+    padding-bottom: -10%;
+}
+.news-heading{
+    padding-top: 3.5%;
+}
 .sections-link{
     color: white;
 }

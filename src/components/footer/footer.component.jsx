@@ -1,43 +1,62 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import {withRouter,Link} from 'react-router-dom'
+
+import './footer.css'
 
 const FooterPage = () => {
   return (
-    <MDBFooter color="grey" className="font-small pt-4 mt-4 footer">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="6">
-            <h5 className="title">NY DAILY NEWS</h5>
-            <p>
-            dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            </p>
-          </MDBCol>
-          <MDBCol md="6">
-            <h5 className="title">Links</h5>
-            <ul>
-              <li className="list-unstyled">
-                <a href="#!">Letraset sheets</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">readable content</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">There are many variations</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">passages of Lorem Ipsum</a>
-              </li>
-            </ul>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-      <div className="footer-copyright text-center py-3">
-        <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.nydaily.com"> nydaily.com </a>
-        </MDBContainer>
+    <div className = 'footer'>
+      <div className = 'section-1'>
+        <h1><i className = 'newspaper icon icon-size'></i></h1>
+        <p>Connect</p>
+        <div className = 'social-icons'>
+          <i class="facebook icon"></i>
+          <i class="twitter icon"></i>
+          <i class="instagram icon"></i>
+          <i class="youtube icon"></i>
+        </div>
       </div>
-    </MDBFooter>
+
+      <div className = 'section-2'>
+        <h5>TRIBUNE PUBLICATIONS</h5>
+        <div className = 'links-1'>
+          <div className = 'c1'>
+            <p>Chicago Tribune</p>
+            <p>Orland Sentimal</p>
+            <p>The morning call of Pa.</p>
+            <p>Daily Press of Va.</p>
+            <p>The daily meal</p>
+          </div>
+          <div className = 'c2'>
+            <p>Chicago Tribune</p>
+            <p>Orland Sentimal</p>
+            <p>The morning call of Pa.</p>
+            <p>Daily Press of Va.</p>
+            <p>The daily meal</p>
+          </div>
+        </div>
+
+        <h5>COMPANY INFO</h5>
+        <div className = 'links-2'>
+          <div className = 'c1'>
+            <p>Chicago Tribune</p>
+            <p>Orland Sentimal</p>
+            <p>The morning call of Pa.</p>
+            <p>Daily Press of Va.</p>
+            <p>The daily meal</p>
+          </div>
+          <div className = 'c2'>
+            <p>Chicago Tribune</p>
+            <p>Orland Sentimal</p>
+            <p>The morning call of Pa.</p>
+            <p>Daily Press of Va.</p>
+            <p>The daily meal</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   );
 }
 
-export default FooterPage;
+export default withRouter(FooterPage);

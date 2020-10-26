@@ -7,21 +7,23 @@ class Header extends Component{
       }
     render(){
         return (
-            <div>
-                <Navbar bg="dark" variant="dark">
-                    <Nav.Link className = 'sections-link'><i className = 'align justify icon'></i>SECTIONS</Nav.Link>
-                        <Nav className="mr-auto ml-auto " variant = 'light' >           
-                            <Nav.Link variant = 'light'>NEW YORK</Nav.Link>
-                            <Nav.Link >SPORTS</Nav.Link>
-                            <Nav.Link >NEWS</Nav.Link>
-                            <Nav.Link >SNYDE</Nav.Link>
-                            <Nav.Link >OPINION</Nav.Link>
-                        </Nav>
-                    <Form inline>
-                    <Button variant="light">LOG IN</Button>
-                    </Form>
-                </Navbar>
-                <div>
+            <div >
+                <div className = 'header'>
+                    <Navbar bg="dark" variant="dark" >
+                        <Nav.Link className = 'sections-link'><i className = 'align justify icon'></i>SECTIONS</Nav.Link>
+                            <Nav className="mr-auto ml-auto " variant = 'light' >           
+                                <Nav.Link variant = 'light'>NEW YORK</Nav.Link>
+                                <Nav.Link >SPORTS</Nav.Link>
+                                <Nav.Link >NEWS</Nav.Link>
+                                <Nav.Link >SNYDE</Nav.Link>
+                                <Nav.Link >OPINION</Nav.Link>
+                            </Nav>
+                        <Form inline>
+                        <Button variant="light">LOG IN</Button>
+                        </Form>
+                    </Navbar>
+                </div>
+                <div className = 'news-heading'>
                     <h1 className = 'main-heading'>DAILY <i className = 'newspaper icon h1-icon' ></i> NEWS</h1>
                     <p className = 'h1-date'>{this.state.curDate}</p>
                 </div>                
